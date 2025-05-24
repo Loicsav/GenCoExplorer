@@ -1,0 +1,25 @@
+tipo_celular,module_size,LAPTM4A_MM,LAPTM4A_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,184.0,0.209,49.0,21,6,28.57,0.64 (0.20-1.08),15,71.43,3.01 (2.47-3.55),2.56,1.78
+T cells 18,506.0,0.106,14.0,225,9,4.0,2.58 (1.80-3.35),216,96.0,3.67 (3.41-3.93),5.88,7.99
+astrocytes 5,328.0,0.158,47.0,128,0,0.0,NA,128,100.0,3.57 (3.23-3.91),NA,6.76
+oligodendrocyte progenitor cells 7,628.0,0.175,57.0,164,12,7.32,3.67 (3.21-4.14),152,92.68,4.13 (3.77-4.49),3.31,7.86
+GABA neurons expressing GLU receptors 22,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,1220.0,0.135,31.0,410,17,4.15,3.34 (2.86-3.82),393,95.85,4.30 (4.11-4.50),11.58,7.34
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,559.0,0.303,83.0,155,0,0.0,NA,155,100.0,4.34 (3.97-4.70),NA,4.33
+oligodendrocytes 20,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA like neurons 14,2402.0,0.309,68.0,455,25,5.49,2.86 (2.18-3.53),430,94.51,4.46 (4.28-4.65),22.70,8.03
+astrocytes 8,603.0,0.081,53.0,89,0,0.0,NA,89,100.0,2.76 (2.41-3.11),NA,6.04
+oligodendrocyte progenitor cells 12,1049.0,0.138,72.0,235,12,5.11,3.58 (3.12-4.05),223,94.89,3.84 (3.59-4.09),3.65,7.83
+oligodendrocytes 10,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+connective tissue cells 21,301.0,0.378,52.0,158,7,4.43,3.04 (2.09-3.98),151,95.57,4.34 (3.96-4.72),6.43,7.10
+astrocytes 15,1768.0,0.186,98.0,105,4,3.81,1.62 (0.89-2.34),101,96.19,3.28 (2.94-3.62),3.77,3.99
+oligodendrocytes 16,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da neurons 6,729.0,0.11,28.0,182,0,0.0,NA,182,100.0,3.64 (3.38-3.89),NA,8.52
+astrocytes microglia 23,118.0,0.276,30.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,1807.0,0.186,99.0,104,6,5.77,2.10 (1.05-3.14),98,94.23,2.91 (2.62-3.20),8.90,5.18
+oligodendrocytes 0,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+microglia 1,406.0,0.123,27.0,278,2,0.72,5.79 (5.22-6.37),276,99.28,4.35 (4.07-4.62),3.96,6.76
+oligodendrocytes 3,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 2,,,,0,0,0.0,NA,0,0.0,NA,NA,NA

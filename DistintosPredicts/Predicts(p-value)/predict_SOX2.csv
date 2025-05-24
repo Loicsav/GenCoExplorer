@@ -1,0 +1,25 @@
+tipo_celular,module_size,SOX2_MM,SOX2_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,328.0,0.099,14.0,128,0,0.0,NA,128,100.0,3.57 (3.23-3.91),NA,6.76
+oligodendrocyte progenitor cells 7,628.0,0.165,51.0,164,5,3.05,6.42 (4.81-8.04),159,96.95,3.98 (3.66-4.31),1.89,7.70
+GABA neurons expressing GLU receptors 22,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 20,250.0,0.021,3.0,14,0,0.0,NA,14,100.0,1.92 (1.21-2.62),NA,4.81
+GABA like neurons 14,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 8,603.0,0.115,72.0,89,8,8.99,1.22 (1.03-1.40),81,91.01,2.98 (2.61-3.34),5.55,6.09
+oligodendrocyte progenitor cells 12,708.0,0.164,67.0,32,11,34.38,1.65 (0.87-2.43),21,65.62,4.28 (3.32-5.24),3.30,2.23
+oligodendrocytes 10,1277.0,0.067,21.0,27,0,0.0,NA,27,100.0,5.41 (4.54-6.27),NA,6.37
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,1768.0,0.177,97.0,105,21,20.0,1.58 (1.25-1.91),84,80.0,3.66 (3.31-4.02),7.14,3.19
+oligodendrocytes 16,96.0,0.204,40.0,102,17,16.67,1.48 (1.14-1.81),85,83.33,3.82 (3.50-4.14),5.57,8.08
+da neurons 6,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes microglia 23,122.0,0.269,43.0,46,1,2.17,5.24 (NA-NA),45,97.83,5.03 (4.45-5.60),2.53,3.23
+astrocytes 4,208.0,0.201,53.0,173,2,1.16,3.53 (1.06-5.99),171,98.84,3.80 (3.50-4.10),2.66,5.66
+oligodendrocytes 0,1186.0,0.139,39.0,300,28,9.33,3.65 (3.34-3.96),272,90.67,3.81 (3.58-4.04),4.70,4.10
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,357.0,0.141,77.0,127,3,2.36,3.31 (1.97-4.64),124,97.64,3.11 (2.78-3.45),4.79,4.22
+oligodendrocytes 2,407.0,0.177,71.0,122,64,52.46,2.30 (2.03-2.58),58,47.54,5.39 (4.86-5.91),3.15,2.21

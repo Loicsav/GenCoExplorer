@@ -1,0 +1,25 @@
+tipo_celular,module_size,SEC23B_MM,SEC23B_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,351.0,0.183,70.0,71,10,14.08,3.24 (1.90-4.58),61,85.92,2.53 (2.10-2.95),1.97,3.84
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,1656.0,0.131,75.0,136,10,7.35,4.11 (3.50-4.71),126,92.65,3.15 (2.87-3.43),2.50,5.19
+oligodendrocyte progenitor cells 7,4285.0,0.134,48.0,353,30,8.5,2.41 (1.78-3.04),323,91.5,4.07 (3.88-4.25),21.04,6.86
+GABA neurons expressing GLU receptors 22,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GLU like neurons 17,1316.0,0.155,76.0,101,1,0.99,3.28 (NA-NA),100,99.01,3.05 (2.69-3.40),2.06,3.06
+da like neurons 11,102.0,0.082,6.0,8,1,12.5,0.95 (NA-NA),7,87.5,3.07 (2.93-3.20),2.05,1.90
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 20,271.0,0.267,80.0,8,0,0.0,NA,8,100.0,3.49 (2.00-4.99),NA,3.42
+GABA like neurons 14,3052.0,0.06,3.0,125,0,0.0,NA,125,100.0,3.35 (3.03-3.68),NA,8.61
+astrocytes 8,577.0,0.079,45.0,83,0,0.0,NA,83,100.0,3.25 (2.80-3.70),NA,4.47
+oligodendrocyte progenitor cells 12,1049.0,0.094,51.0,235,8,3.4,3.52 (2.67-4.37),227,96.6,3.84 (3.60-4.08),4.72,7.72
+oligodendrocytes 10,735.0,0.056,16.0,277,4,1.44,4.76 (4.35-5.17),273,98.56,3.88 (3.63-4.12),2.26,9.04
+connective tissue cells 21,145.0,0.4,93.0,1,0,0.0,NA,1,100.0,NA,NA,1.58
+astrocytes 15,418.0,0.034,13.0,54,5,9.26,3.88 (2.28-5.48),49,90.74,3.66 (3.20-4.12),2.68,3.05
+oligodendrocytes 16,75.0,0.132,10.0,1,0,0.0,NA,1,100.0,NA,NA,1.70
+da neurons 6,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes microglia 23,103.0,0.276,27.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,514.0,0.165,38.0,95,0,0.0,NA,95,100.0,3.37 (2.95-3.79),NA,4.64
+oligodendrocytes 0,2078.0,0.119,59.0,238,13,5.46,3.52 (2.64-4.40),225,94.54,3.64 (3.42-3.87),5.75,4.98
+microglia 1,813.0,0.119,54.0,79,6,7.59,2.83 (2.25-3.41),73,92.41,3.13 (2.69-3.56),3.32,8.28
+oligodendrocytes 3,854.0,0.048,5.0,76,1,1.32,0.21 (NA-NA),75,98.68,2.82 (2.49-3.14),2.96,4.74
+oligodendrocytes 2,1630.0,0.165,90.0,154,3,1.95,5.02 (NA-NA),151,98.05,3.23 (2.97-3.50),2.00,3.62

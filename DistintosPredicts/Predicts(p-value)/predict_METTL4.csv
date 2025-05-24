@@ -1,0 +1,25 @@
+tipo_celular,module_size,METTL4_MM,METTL4_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,624.0,0.15,47.0,142,1,0.7,2.85 (NA-NA),141,99.3,3.21 (2.94-3.48),1.34,4.32
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,4285.0,0.154,77.0,353,61,17.28,2.24 (1.94-2.54),292,82.72,4.35 (4.17-4.53),20.04,5.56
+GABA neurons expressing GLU receptors 22,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GLU like neurons 17,1316.0,0.139,64.0,101,4,3.96,3.50 (2.08-4.91),97,96.04,3.03 (2.67-3.39),3.07,3.05
+da like neurons 11,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,658.0,0.103,13.0,120,2,1.67,2.84 (2.53-3.15),118,98.33,4.64 (4.32-4.96),3.61,3.65
+oligodendrocytes 20,403.0,0.063,27.0,18,10,55.56,0.91 (0.52-1.29),8,44.44,3.09 (2.19-4.00),4.74,2.60
+GABA like neurons 14,3052.0,0.175,79.0,125,3,2.4,3.78 (2.42-5.14),122,97.6,3.34 (3.01-3.67),6.50,8.66
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,3303.0,0.054,19.0,276,39,14.13,2.09 (1.81-2.37),237,85.87,3.87 (3.64-4.11),9.62,4.37
+oligodendrocytes 10,2107.0,0.029,1.0,358,70,19.55,2.31 (1.98-2.64),288,80.45,4.35 (4.16-4.53),22.18,6.38
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,90.0,0.236,76.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+da neurons 6,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes microglia 23,96.0,0.378,80.0,1,0,0.0,NA,1,100.0,0.39 (NA-NA),NA,4.29
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,2078.0,0.088,8.0,238,23,9.66,3.09 (2.57-3.62),215,90.34,3.71 (3.47-3.94),6.68,4.84
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,681.0,0.064,20.0,87,38,43.68,2.09 (1.80-2.38),49,56.32,3.03 (2.63-3.43),5.52,3.25
+oligodendrocytes 2,1630.0,0.156,79.0,154,6,3.9,3.82 (2.44-5.19),148,96.1,3.22 (2.95-3.49),3.11,3.61

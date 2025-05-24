@@ -1,0 +1,25 @@
+tipo_celular,module_size,MAP3K5_MM,MAP3K5_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,235.0,0.319,73.0,140,11,7.86,3.38 (2.48-4.29),129,92.14,4.66 (4.37-4.95),5.15,3.41
+T cells 18,388.0,0.14,45.0,84,9,10.71,2.64 (2.25-3.03),75,89.29,3.02 (2.65-3.38),2.12,4.59
+astrocytes 5,222.0,0.107,8.0,98,7,7.14,4.16 (2.48-5.84),91,92.86,4.64 (4.22-5.06),2.04,2.70
+oligodendrocyte progenitor cells 7,436.0,0.086,21.0,219,2,0.91,5.64 (NA-NA),217,99.09,5.21 (4.92-5.50),2.12,4.63
+GABA neurons expressing GLU receptors 22,400.0,0.152,24.0,24,10,41.67,1.11 (0.47-1.74),14,58.33,2.90 (2.47-3.34),5.60,2.14
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,71.0,0.367,65.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,303.0,0.231,63.0,54,0,0.0,NA,54,100.0,4.84 (4.22-5.46),NA,5.04
+oligodendrocytes 20,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA like neurons 14,3052.0,0.166,73.0,125,5,4.0,3.45 (2.73-4.16),120,96.0,3.35 (3.02-3.68),4.44,8.79
+astrocytes 8,262.0,0.378,100.0,11,0,0.0,NA,11,100.0,1.91 (1.09-2.74),NA,4.83
+oligodendrocyte progenitor cells 12,254.0,0.385,80.0,37,6,16.22,2.96 (2.49-3.43),31,83.78,4.86 (4.23-5.50),2.70,2.43
+oligodendrocytes 10,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+connective tissue cells 21,93.0,0.177,6.0,1,0,0.0,NA,1,100.0,0.26 (NA-NA),NA,1.92
+astrocytes 15,418.0,0.163,54.0,54,5,9.26,2.90 (2.03-3.76),49,90.74,3.77 (3.30-4.25),2.42,3.07
+oligodendrocytes 16,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da neurons 6,398.0,0.096,18.0,138,24,17.39,2.84 (2.26-3.42),114,82.61,5.31 (4.93-5.69),2.54,2.77
+astrocytes microglia 23,100.0,0.204,9.0,9,2,22.22,2.85 (2.21-3.49),7,77.78,4.27 (3.06-5.47),1.90,1.68
+astrocytes 4,161.0,0.136,20.0,45,0,0.0,NA,45,100.0,5.28 (4.66-5.91),NA,3.11
+oligodendrocytes 0,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+microglia 1,315.0,0.262,85.0,144,2,1.39,2.67 (0.61-4.72),142,98.61,4.49 (4.18-4.80),2.78,4.23
+oligodendrocytes 3,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 2,,,,0,0,0.0,NA,0,0.0,NA,NA,NA

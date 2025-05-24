@@ -1,0 +1,25 @@
+tipo_celular,module_size,MAP1LC3A_MM,MAP1LC3A_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GLU receptors 22,487.0,0.399,92.0,73,1,1.37,3.22 (NA-NA),72,98.63,2.75 (2.36-3.14),1.45,7.41
+GLU like neurons 17,300.0,0.219,75.0,16,0,0.0,NA,16,100.0,2.08 (1.23-2.93),NA,2.47
+da like neurons 11,1220.0,0.437,95.0,410,23,5.61,4.34 (3.33-5.35),387,94.39,4.24 (4.05-4.43),8.97,7.43
+GABA neurons expressing GABA receptors 13,417.0,0.254,91.0,213,22,10.33,1.89 (1.26-2.52),191,89.67,4.02 (3.78-4.25),6.45,10.06
+endothelial cells 9,916.0,0.183,42.0,302,5,1.66,1.81 (0.57-3.05),297,98.34,4.03 (3.81-4.26),5.85,10.73
+oligodendrocytes 20,938.0,0.162,67.0,169,11,6.51,2.16 (1.23-3.09),158,93.49,3.56 (3.34-3.78),3.75,5.48
+GABA like neurons 14,2402.0,0.594,95.0,455,28,6.15,3.00 (2.11-3.90),427,93.85,4.45 (4.27-4.63),20.82,8.05
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 10,806.0,0.36,86.0,261,16,6.13,3.68 (2.70-4.67),245,93.87,4.41 (4.16-4.65),8.66,5.90
+connective tissue cells 21,101.0,0.368,64.0,116,7,6.03,2.04 (0.99-3.10),109,93.97,4.74 (4.33-5.15),2.97,3.23
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,313.0,0.255,62.0,291,17,5.84,4.21 (2.99-5.43),274,94.16,4.33 (4.11-4.56),6.00,3.68
+da neurons 6,729.0,0.297,95.0,182,2,1.1,2.87 (2.83-2.90),180,98.9,3.65 (3.39-3.90),4.89,8.56
+astrocytes microglia 23,134.0,0.403,87.0,2,1,50.0,3.34 (NA-NA),1,50.0,0.82 (NA-NA),2.03,1.45
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,546.0,0.129,26.0,252,24,9.52,2.07 (1.42-2.72),228,90.48,4.33 (4.08-4.57),8.62,8.17
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,457.0,0.201,82.0,345,23,6.67,4.37 (3.40-5.34),322,93.33,4.27 (4.05-4.48),7.39,5.57
+oligodendrocytes 2,526.0,0.318,67.0,213,1,0.47,NA,212,99.53,3.98 (3.70-4.25),1.49,7.97

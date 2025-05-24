@@ -1,0 +1,25 @@
+tipo_celular,module_size,ATOX1_MM,ATOX1_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GLU receptors 22,400.0,0.117,10.0,24,4,16.67,1.68 (0.29-3.07),20,83.33,2.25 (1.70-2.80),7.14,2.87
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,1220.0,0.131,29.0,410,9,2.2,2.78 (1.89-3.66),401,97.8,4.29 (4.10-4.48),5.79,7.55
+GABA neurons expressing GABA receptors 13,417.0,0.123,20.0,213,4,1.88,2.48 (-0.67-5.64),209,98.12,3.78 (3.54-4.02),7.21,9.73
+endothelial cells 9,916.0,0.385,83.0,302,1,0.33,7.18 (NA-NA),301,99.67,3.97 (3.74-4.19),1.34,10.68
+oligodendrocytes 20,938.0,0.19,77.0,169,1,0.59,0.55 (NA-NA),168,99.41,3.50 (3.29-3.72),3.86,5.37
+GABA like neurons 14,2402.0,0.449,84.0,455,3,0.66,0.59 (0.19-0.98),452,99.34,4.38 (4.19-4.56),48.01,8.57
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 10,735.0,0.111,59.0,277,0,0.0,NA,277,100.0,3.89 (3.65-4.14),NA,8.95
+connective tissue cells 21,142.0,0.347,71.0,55,0,0.0,NA,55,100.0,3.42 (2.58-4.26),NA,3.29
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,113.0,0.189,36.0,10,0,0.0,NA,10,100.0,2.94 (2.13-3.75),NA,1.88
+da neurons 6,729.0,0.22,80.0,182,0,0.0,NA,182,100.0,3.64 (3.38-3.89),NA,8.52
+astrocytes microglia 23,107.0,0.328,58.0,1,0,0.0,NA,1,100.0,3.12 (NA-NA),NA,2.49
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,546.0,0.186,59.0,252,10,3.97,3.12 (1.76-4.48),242,96.03,4.14 (3.89-4.39),9.54,8.16
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,303.0,0.11,39.0,154,0,0.0,NA,154,100.0,3.62 (3.30-3.94),NA,11.84
+oligodendrocytes 2,526.0,0.334,72.0,213,1,0.47,7.18 (NA-NA),212,99.53,3.96 (3.69-4.23),1.96,7.96

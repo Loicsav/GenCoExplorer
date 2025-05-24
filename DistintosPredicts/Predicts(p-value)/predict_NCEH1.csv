@@ -1,0 +1,25 @@
+tipo_celular,module_size,NCEH1_MM,NCEH1_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,401.0,0.133,31.0,19,0,0.0,NA,19,100.0,2.52 (1.81-3.24),NA,3.33
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,423.0,0.124,32.0,80,0,0.0,NA,80,100.0,3.40 (2.93-3.88),NA,5.02
+oligodendrocyte progenitor cells 7,4285.0,0.152,75.0,353,13,3.68,1.16 (0.59-1.73),340,96.32,4.03 (3.85-4.20),40.72,6.82
+GABA neurons expressing GLU receptors 22,1069.0,0.184,63.0,37,0,0.0,NA,37,100.0,2.16 (1.70-2.61),NA,3.10
+GLU like neurons 17,1316.0,0.172,85.0,101,1,0.99,2.53 (NA-NA),100,99.01,3.06 (2.70-3.41),2.99,3.05
+da like neurons 11,289.0,0.185,50.0,6,0,0.0,NA,6,100.0,2.89 (2.54-3.24),NA,2.16
+GABA neurons expressing GABA receptors 13,357.0,0.181,60.0,237,0,0.0,NA,237,100.0,4.41 (4.18-4.64),NA,4.18
+endothelial cells 9,338.0,0.136,51.0,191,0,0.0,NA,191,100.0,3.88 (3.66-4.11),NA,9.16
+oligodendrocytes 20,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA like neurons 14,3052.0,0.207,94.0,125,0,0.0,NA,125,100.0,3.35 (3.03-3.68),NA,8.61
+astrocytes 8,354.0,0.131,56.0,8,0,0.0,NA,8,100.0,0.78 (0.08-1.47),NA,5.07
+oligodendrocyte progenitor cells 12,3303.0,0.063,31.0,276,6,2.17,1.83 (0.92-2.75),270,97.83,3.59 (3.37-3.81),12.28,4.95
+oligodendrocytes 10,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,1768.0,0.143,89.0,105,10,9.52,2.35 (1.49-3.20),95,90.48,3.31 (2.96-3.67),4.79,3.89
+oligodendrocytes 16,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da neurons 6,518.0,0.191,94.0,122,14,11.48,2.09 (1.32-2.85),108,88.52,4.32 (3.92-4.73),6.50,3.09
+astrocytes microglia 23,125.0,0.261,23.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,514.0,0.122,12.0,95,2,2.11,0.83 (0.75-0.91),93,97.89,3.44 (3.02-3.86),3.41,4.67
+oligodendrocytes 0,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+microglia 1,346.0,0.193,73.0,43,1,2.33,4.41 (NA-NA),42,97.67,3.75 (3.23-4.27),1.35,4.56
+oligodendrocytes 3,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 2,,,,0,0,0.0,NA,0,0.0,NA,NA,NA

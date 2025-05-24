@@ -1,0 +1,25 @@
+tipo_celular,module_size,CDKN1B_MM,CDKN1B_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,518.0,0.253,91.0,131,4,3.05,3.73 (2.63-4.82),127,96.95,3.05 (2.77-3.33),3.67,4.79
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,628.0,0.141,33.0,164,2,1.22,4.77 (3.99-5.55),162,98.78,4.07 (3.74-4.41),2.59,7.59
+GABA neurons expressing GLU receptors 22,703.0,0.208,63.0,23,3,13.04,2.93 (1.07-4.79),20,86.96,1.96 (1.19-2.73),3.29,4.02
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,586.0,0.129,29.0,62,3,4.84,2.43 (NA-NA),59,95.16,4.08 (3.63-4.53),2.53,4.29
+oligodendrocytes 20,295.0,0.153,35.0,28,8,28.57,2.95 (2.22-3.68),20,71.43,1.85 (1.34-2.37),2.01,3.49
+GABA like neurons 14,2402.0,0.15,25.0,455,41,9.01,2.51 (1.95-3.07),414,90.99,4.57 (4.39-4.75),16.66,8.06
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,3303.0,0.047,12.0,276,69,25.0,2.49 (2.24-2.74),207,75.0,4.01 (3.75-4.27),9.87,3.52
+oligodendrocytes 10,735.0,0.085,42.0,277,1,0.36,4.81 (NA-NA),276,99.64,3.89 (3.65-4.13),1.34,8.97
+connective tissue cells 21,102.0,0.326,74.0,5,1,20.0,1.01 (NA-NA),4,80.0,1.57 (1.57-1.57),1.35,1.43
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,158.0,0.205,53.0,30,1,3.33,1.95 (NA-NA),29,96.67,2.35 (1.67-3.02),1.50,12.39
+da neurons 6,448.0,0.088,34.0,43,6,13.95,3.78 (3.48-4.08),37,86.05,3.18 (2.56-3.80),2.80,3.58
+astrocytes microglia 23,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,613.0,0.2,90.0,127,24,18.9,2.52 (2.15-2.89),103,81.1,3.27 (2.71-3.82),3.28,6.98
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,743.0,0.128,89.0,76,0,0.0,NA,76,100.0,3.16 (2.77-3.55),NA,7.29
+oligodendrocytes 2,528.0,0.285,82.0,175,11,6.29,3.13 (2.23-4.03),164,93.71,4.47 (4.11-4.84),3.44,4.70

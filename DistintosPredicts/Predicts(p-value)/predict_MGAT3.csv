@@ -1,0 +1,25 @@
+tipo_celular,module_size,MGAT3_MM,MGAT3_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,4285.0,0.114,22.0,353,44,12.46,2.39 (1.97-2.80),309,87.54,4.18 (3.99-4.37),20.35,6.31
+GABA neurons expressing GLU receptors 22,400.0,0.239,73.0,24,17,70.83,2.15 (1.47-2.84),7,29.17,2.16 (1.57-2.76),3.74,3.19
+GLU like neurons 17,1247.0,0.063,7.0,51,1,1.96,2.00 (NA-NA),50,98.04,3.66 (3.08-4.25),3.35,3.23
+da like neurons 11,853.0,0.1,27.0,133,21,15.79,1.90 (1.34-2.46),112,84.21,3.56 (3.23-3.90),5.57,3.90
+GABA neurons expressing GABA receptors 13,70.0,0.191,64.0,4,0,0.0,NA,4,100.0,3.85 (3.81-3.89),NA,5.49
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 20,348.0,0.126,49.0,33,6,18.18,3.07 (2.78-3.36),27,81.82,2.65 (2.05-3.25),3.38,3.38
+GABA like neurons 14,2090.0,0.141,40.0,74,2,2.7,2.22 (1.63-2.82),72,97.3,2.96 (2.58-3.35),3.87,10.68
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,411.0,0.024,1.0,103,2,1.94,4.07 (0.85-7.29),101,98.06,5.59 (5.20-5.97),3.07,3.08
+oligodendrocytes 10,806.0,0.138,42.0,261,8,3.07,2.94 (1.61-4.26),253,96.93,4.42 (4.17-4.66),9.30,5.96
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,112.0,0.146,24.0,1,0,0.0,NA,1,100.0,NA,NA,1.31
+da neurons 6,448.0,0.126,73.0,43,2,4.65,3.73 (3.62-3.83),41,95.35,3.25 (2.70-3.81),3.84,3.45
+astrocytes microglia 23,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,309.0,0.177,80.0,30,0,0.0,NA,30,100.0,6.09 (5.49-6.69),NA,2.87
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,639.0,0.103,56.0,15,7,46.67,1.49 (0.55-2.43),8,53.33,5.44 (4.03-6.86),2.49,1.98
+oligodendrocytes 2,131.0,0.19,54.0,20,0,0.0,NA,20,100.0,4.51 (3.77-5.25),NA,3.82

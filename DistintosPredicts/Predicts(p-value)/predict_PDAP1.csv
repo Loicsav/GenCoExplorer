@@ -1,0 +1,25 @@
+tipo_celular,module_size,PDAP1_MM,PDAP1_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,393.0,0.176,63.0,59,0,0.0,NA,59,100.0,3.10 (2.60-3.61),NA,5.34
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GLU receptors 22,848.0,0.063,2.0,262,14,5.34,2.22 (1.41-3.04),248,94.66,4.27 (4.02-4.52),7.67,3.90
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,1220.0,0.187,52.0,410,11,2.68,2.79 (1.97-3.61),399,97.32,4.28 (4.09-4.47),15.28,7.30
+GABA neurons expressing GABA receptors 13,417.0,0.126,24.0,213,17,7.98,1.56 (0.92-2.20),196,92.02,3.98 (3.74-4.21),7.91,9.84
+endothelial cells 9,916.0,0.161,35.0,302,8,2.65,2.18 (0.87-3.48),294,97.35,4.02 (3.80-4.25),6.39,10.77
+oligodendrocytes 20,253.0,0.156,48.0,7,0,0.0,NA,7,100.0,0.94 (0.08-1.80),NA,5.94
+GABA like neurons 14,2402.0,0.391,79.0,455,22,4.84,1.79 (1.23-2.36),433,95.16,4.49 (4.31-4.67),27.07,7.91
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 10,735.0,0.113,60.0,277,1,0.36,NA,276,99.64,3.89 (3.65-4.14),6.60,8.95
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,158.0,0.22,64.0,30,1,3.33,1.95 (NA-NA),29,96.67,2.35 (1.67-3.02),1.50,12.39
+da neurons 6,729.0,0.141,44.0,182,1,0.55,1.55 (NA-NA),181,99.45,3.65 (3.40-3.90),3.41,8.55
+astrocytes microglia 23,96.0,0.393,87.0,1,0,0.0,NA,1,100.0,0.39 (NA-NA),NA,4.29
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,546.0,0.107,14.0,252,25,9.92,1.86 (1.35-2.37),227,90.08,4.37 (4.13-4.61),11.92,7.80
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,303.0,0.077,19.0,154,0,0.0,NA,154,100.0,3.62 (3.30-3.94),NA,11.84
+oligodendrocytes 2,526.0,0.154,16.0,213,0,0.0,NA,213,100.0,3.98 (3.70-4.25),NA,7.94

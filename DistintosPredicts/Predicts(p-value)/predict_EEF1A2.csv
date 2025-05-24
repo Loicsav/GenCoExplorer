@@ -1,0 +1,25 @@
+tipo_celular,module_size,EEF1A2_MM,EEF1A2_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,296.0,0.331,90.0,251,6,2.39,NA,245,97.61,4.07 (3.83-4.30),1.72,6.26
+GABA neurons expressing GLU receptors 22,848.0,0.449,96.0,262,22,8.4,2.88 (2.13-3.63),240,91.6,4.28 (4.02-4.53),4.52,4.07
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,1220.0,0.511,98.0,410,32,7.8,3.66 (3.10-4.23),378,92.2,4.30 (4.10-4.50),8.67,7.42
+GABA neurons expressing GABA receptors 13,357.0,0.18,60.0,237,7,2.95,5.28 (4.15-6.41),230,97.05,4.38 (4.15-4.62),3.88,4.19
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 20,298.0,0.126,45.0,6,0,0.0,NA,6,100.0,0.26 (NA-NA),NA,1.94
+GABA like neurons 14,2402.0,0.658,97.0,455,42,9.23,2.69 (2.10-3.29),413,90.77,4.55 (4.36-4.73),16.51,8.05
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,3303.0,0.093,68.0,276,27,9.78,2.29 (1.76-2.81),249,90.22,3.73 (3.50-3.95),8.50,4.74
+oligodendrocytes 10,806.0,0.5,96.0,261,15,5.75,3.36 (2.63-4.09),246,94.25,4.41 (4.16-4.66),8.06,5.94
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,313.0,0.465,92.0,291,21,7.22,3.99 (3.21-4.77),270,92.78,4.35 (4.12-4.58),5.56,3.68
+da neurons 6,409.0,0.161,66.0,235,12,5.11,3.34 (2.22-4.46),223,94.89,4.02 (3.77-4.28),2.74,4.50
+astrocytes microglia 23,70.0,0.387,74.0,76,1,1.32,NA,75,98.68,4.20 (3.69-4.72),1.62,4.57
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,116.0,0.236,72.0,169,5,2.96,4.89 (3.32-6.46),164,97.04,4.26 (3.96-4.56),1.79,6.63
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,457.0,0.346,96.0,345,28,8.12,4.17 (3.62-4.72),317,91.88,4.28 (4.06-4.51),6.09,5.66
+oligodendrocytes 2,99.0,0.337,72.0,116,3,2.59,3.48 (3.47-3.49),113,97.41,3.97 (3.66-4.27),2.01,7.37

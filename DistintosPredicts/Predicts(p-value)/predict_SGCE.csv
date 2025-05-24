@@ -1,0 +1,25 @@
+tipo_celular,module_size,SGCE_MM,SGCE_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,1141.0,0.136,58.0,166,2,1.2,0.38 (0.04-0.71),164,98.8,3.44 (3.19-3.68),8.68,4.50
+oligodendrocyte progenitor cells 7,448.0,0.133,45.0,108,0,0.0,NA,108,100.0,3.26 (2.82-3.69),NA,17.12
+GABA neurons expressing GLU receptors 22,400.0,0.16,27.0,24,7,29.17,0.55 (0.37-0.73),17,70.83,2.82 (2.41-3.22),5.84,2.65
+GLU like neurons 17,229.0,0.125,15.0,22,0,0.0,NA,22,100.0,2.52 (1.91-3.13),NA,3.09
+da like neurons 11,109.0,0.198,41.0,1,0,0.0,NA,1,100.0,1.71 (NA-NA),NA,6.86
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+endothelial cells 9,586.0,0.227,53.0,62,0,0.0,NA,62,100.0,4.05 (3.60-4.49),NA,4.21
+oligodendrocytes 20,295.0,0.157,37.0,28,0,0.0,NA,28,100.0,2.19 (1.73-2.65),NA,3.07
+GABA like neurons 14,3052.0,0.158,65.0,125,0,0.0,NA,125,100.0,3.35 (3.03-3.68),NA,8.61
+astrocytes 8,283.0,0.177,71.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,143.0,0.508,97.0,1,1,100.0,7.70 (NA-NA),0,0.0,NA,1.31,NA
+oligodendrocytes 10,1277.0,0.15,72.0,27,0,0.0,NA,27,100.0,5.41 (4.54-6.27),NA,6.37
+connective tissue cells 21,111.0,0.252,35.0,1,0,0.0,NA,1,100.0,0.40 (NA-NA),NA,3.65
+astrocytes 15,1768.0,0.056,19.0,105,3,2.86,1.08 (-0.11-2.26),102,97.14,3.28 (2.95-3.62),7.28,3.88
+oligodendrocytes 16,121.0,0.119,3.0,8,0,0.0,NA,8,100.0,0.99 (0.10-1.89),NA,1.91
+da neurons 6,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes microglia 23,134.0,0.335,63.0,2,0,0.0,NA,2,100.0,2.08 (-0.39-4.55),NA,1.74
+astrocytes 4,787.0,0.164,72.0,65,0,0.0,NA,65,100.0,2.96 (2.57-3.36),NA,5.75
+oligodendrocytes 0,1186.0,0.128,25.0,300,0,0.0,NA,300,100.0,3.79 (3.59-4.00),NA,4.16
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,1003.0,0.124,74.0,111,0,0.0,NA,111,100.0,3.30 (2.96-3.64),NA,4.23
+oligodendrocytes 2,921.0,0.089,3.0,200,1,0.5,2.24 (NA-NA),199,99.5,3.63 (3.36-3.90),1.96,3.47

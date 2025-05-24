@@ -1,0 +1,25 @@
+tipo_celular,module_size,SH3GL3_MM,SH3GL3_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,229.0,0.396,92.0,45,0,0.0,NA,45,100.0,5.01 (4.39-5.62),NA,5.36
+GABA neurons expressing GLU receptors 22,567.0,0.146,28.0,16,2,12.5,2.34 (1.57-3.12),14,87.5,1.91 (1.13-2.69),1.65,3.92
+GLU like neurons 17,637.0,0.151,46.0,91,12,13.19,2.36 (1.41-3.30),79,86.81,5.01 (4.48-5.54),3.72,2.96
+da like neurons 11,204.0,0.271,79.0,2,0,0.0,NA,2,100.0,1.89 (-1.31-5.09),NA,4.54
+GABA neurons expressing GABA receptors 13,288.0,0.334,89.0,93,12,12.9,3.54 (2.26-4.81),81,87.1,5.47 (4.97-5.98),4.75,3.83
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 20,676.0,0.304,55.0,110,11,10.0,3.00 (2.02-3.98),99,90.0,5.32 (4.87-5.77),3.74,3.50
+GABA like neurons 14,1300.0,0.154,24.0,306,26,8.5,2.84 (2.14-3.54),280,91.5,5.40 (5.15-5.66),10.08,6.39
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,708.0,0.615,99.0,25,1,4.0,0.21 (NA-NA),24,96.0,3.00 (2.02-3.99),1.83,2.57
+oligodendrocytes 10,204.0,0.441,49.0,92,1,1.09,6.33 (NA-NA),91,98.91,5.69 (5.21-6.17),3.75,3.72
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,287.0,0.16,14.0,105,14,13.33,3.08 (2.16-4.01),91,86.67,5.57 (5.15-5.99),3.25,3.50
+da neurons 6,398.0,0.207,69.0,138,15,10.87,3.00 (1.87-4.13),123,89.13,5.09 (4.73-5.46),2.93,2.71
+astrocytes microglia 23,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,479.0,0.196,80.0,40,3,7.5,4.45 (3.53-5.37),37,92.5,6.01 (5.47-6.55),2.28,3.57
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,99.0,0.17,24.0,24,0,0.0,NA,24,100.0,6.50 (5.81-7.19),NA,2.23
+oligodendrocytes 2,237.0,0.283,75.0,26,0,0.0,NA,26,100.0,5.22 (4.28-6.15),NA,2.55

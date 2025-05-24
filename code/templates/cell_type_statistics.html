@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Type Statistics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .metric-container {
+            margin-left: 20px;
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+        .filter-form {
+            margin-bottom: 30px;
+        }
+        .back-button {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Botón de retroceso -->
+        <a href="/query" class="btn btn-outline-secondary back-button">
+            <i class="fas fa-arrow-left"></i> Search
+        </a>
+
+        <h1>Cell Type Statistics</h1>
+        <form method="POST" class="filter-form">
+            <div class="mb-3">
+                <label for="cell_type_filter" class="form-label">Cell type:</label>
+                <select class="form-select" id="cell_type_filter" name="cell_type_filter">
+                    <option value="">Select a cell type</option>
+                    {% for cell_type in unique_cell_types %}
+                        <option value="{{ cell_type }}" {% if cell_type == cell_type_filter %}selected{% endif %}>{{ cell_type }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </form>
+        <div class="metric-container">
+            <h3>Statistics for {{ cell_type_filter if cell_type_filter else "all cell types" }}</h3>
+            <p>{{ minimally_expressed_genes_all|length }} minimally expressed genes, {{ minimally_expressed_genes_only|length }} of them only expressed in {{ cell_type_filter if cell_type_filter else "this cell type" }} ({{ minimally_expressed_percentage|round(2) }}%)</p>
+            <p>{{ relevant_at_t0_genes_all|length }} relevant genes at T0, {{ relevant_at_t0_genes_only|length }} of them only relevant in {{ cell_type_filter if cell_type_filter else "this cell type" }} ({{ relevant_at_t0_percentage|round(2) }}%)</p>
+            <p>{{ relevant_in_all_iterations_genes_all|length }} relevant genes in all iterations, {{ relevant_in_all_iterations_genes_only|length }} of them only relevant in {{ cell_type_filter if cell_type_filter else "this cell type" }} ({{ relevant_in_all_iterations_percentage|round(2) }}%)</p>
+        </div>
+    </div>
+</body>
+</html>

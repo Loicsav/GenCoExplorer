@@ -1,0 +1,25 @@
+tipo_celular,module_size,BMPR1B_MM,BMPR1B_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%)
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA
+T cells 18,,,,0,0,0.0,NA,0,0.0,NA
+astrocytes 5,322.0,0.073,2.0,58,15,25.86,3.10 (2.50-3.70),43,74.14,4.65 (4.17-5.12)
+oligodendrocyte progenitor cells 7,,,,0,0,0.0,NA,0,0.0,NA
+GABA neurons expressing GLU receptors 22,599.0,0.294,84.0,22,2,9.09,2.36 (-0.42-5.14),20,90.91,2.23 (1.38-3.08)
+GLU like neurons 17,685.0,0.266,87.0,135,27,20.0,2.02 (1.63-2.41),108,80.0,3.55 (3.20-3.90)
+da like neurons 11,,,,0,0,0.0,NA,0,0.0,NA
+GABA neurons expressing GABA receptors 13,,,,0,0,0.0,NA,0,0.0,NA
+endothelial cells 9,,,,0,0,0.0,NA,0,0.0,NA
+oligodendrocytes 20,,,,0,0,0.0,NA,0,0.0,NA
+GABA like neurons 14,,,,0,0,0.0,NA,0,0.0,NA
+astrocytes 8,279.0,0.374,96.0,78,21,26.92,2.98 (2.38-3.58),57,73.08,4.84 (4.40-5.29)
+oligodendrocyte progenitor cells 12,,,,0,0,0.0,NA,0,0.0,NA
+oligodendrocytes 10,,,,0,0,0.0,NA,0,0.0,NA
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA
+astrocytes 15,418.0,0.316,73.0,54,2,3.7,1.95 (0.66-3.24),52,96.3,3.76 (3.31-4.20)
+oligodendrocytes 16,,,,0,0,0.0,NA,0,0.0,NA
+da neurons 6,,,,0,0,0.0,NA,0,0.0,NA
+astrocytes microglia 23,122.0,0.22,24.0,46,2,4.35,4.55 (3.21-5.89),44,95.65,5.05 (4.47-5.64)
+astrocytes 4,220.0,0.166,52.0,63,18,28.57,3.68 (2.95-4.40),45,71.43,5.93 (5.31-6.54)
+oligodendrocytes 0,,,,0,0,0.0,NA,0,0.0,NA
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA
+oligodendrocytes 3,,,,0,0,0.0,NA,0,0.0,NA
+oligodendrocytes 2,,,,0,0,0.0,NA,0,0.0,NA

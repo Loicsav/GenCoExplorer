@@ -1,0 +1,25 @@
+tipo_celular,module_size,DHRS7_MM,DHRS7_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,506.0,0.161,42.0,225,5,2.22,1.91 (0.86-2.96),220,97.78,3.66 (3.41-3.92),5.18,7.96
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,628.0,0.208,72.0,164,6,3.66,3.50 (2.61-4.39),158,96.34,4.12 (3.78-4.46),8.81,7.48
+GABA neurons expressing GLU receptors 22,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+GABA neurons expressing GABA receptors 13,90.0,0.253,96.0,4,2,50.0,2.99 (1.51-4.47),2,50.0,7.70 (7.70-7.70),2.07,1.61
+endothelial cells 9,916.0,0.12,21.0,302,9,2.98,3.17 (2.45-3.90),293,97.02,4.02 (3.78-4.25),6.02,10.80
+oligodendrocytes 20,676.0,0.032,9.0,110,0,0.0,NA,110,100.0,4.99 (4.54-5.44),NA,3.52
+GABA like neurons 14,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,1049.0,0.158,77.0,235,6,2.55,3.50 (2.61-4.39),229,97.45,3.83 (3.60-4.07),5.34,7.67
+oligodendrocytes 10,483.0,0.077,29.0,129,0,0.0,NA,129,100.0,3.43 (3.04-3.82),NA,19.19
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,313.0,0.095,3.0,291,3,1.03,1.51 (0.53-2.49),288,98.97,4.36 (4.14-4.59),7.28,3.78
+da neurons 6,409.0,0.077,15.0,235,3,1.28,4.47 (NA-NA),232,98.72,3.97 (3.72-4.22),4.97,4.41
+astrocytes microglia 23,67.0,0.482,99.0,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,546.0,0.105,14.0,252,17,6.75,2.01 (1.27-2.74),235,93.25,4.30 (4.05-4.54),11.35,7.98
+microglia 1,406.0,0.137,32.0,278,0,0.0,NA,278,100.0,4.36 (4.09-4.63),NA,6.74
+oligodendrocytes 3,743.0,0.071,34.0,76,5,6.58,3.76 (3.68-3.85),71,93.42,3.11 (2.69-3.54),6.14,7.37
+oligodendrocytes 2,526.0,0.161,18.0,213,1,0.47,4.47 (NA-NA),212,99.53,3.98 (3.70-4.25),7.67,7.94

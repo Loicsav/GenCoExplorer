@@ -1,0 +1,25 @@
+tipo_celular,module_size,CUL4B_MM,CUL4B_MM_percentile,total_annotations,known_annotations,known_percentage,IC known(CI95%),new_annotations,new_percentage,IC new(CI95%),p_value_known,p_value_new
+microglia 19,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+T cells 18,518.0,0.118,23.0,131,1,0.76,3.50 (NA-NA),130,99.24,3.07 (2.79-3.35),1.88,4.78
+astrocytes 5,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 7,4285.0,0.135,50.0,353,52,14.73,2.45 (2.07-2.83),301,85.27,4.22 (4.03-4.41),24.92,5.15
+GABA neurons expressing GLU receptors 22,599.0,0.13,12.0,22,1,4.55,0.94 (NA-NA),21,95.45,2.31 (1.48-3.13),1.47,4.07
+GLU like neurons 17,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+da like neurons 11,1220.0,0.122,26.0,410,27,6.59,3.34 (2.75-3.93),383,93.41,4.31 (4.12-4.51),13.83,7.07
+GABA neurons expressing GABA receptors 13,93.0,0.109,11.0,2,0,0.0,NA,2,100.0,NA,NA,2.07
+endothelial cells 9,385.0,0.069,12.0,275,44,16.0,2.05 (1.66-2.44),231,84.0,4.41 (4.15-4.67),11.32,4.85
+oligodendrocytes 20,253.0,0.261,83.0,7,0,0.0,NA,7,100.0,0.94 (0.08-1.80),NA,5.94
+GABA like neurons 14,2402.0,0.141,22.0,455,45,9.89,2.53 (2.03-3.03),410,90.11,4.59 (4.40-4.77),19.24,7.69
+astrocytes 8,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocyte progenitor cells 12,3303.0,0.066,34.0,276,41,14.86,2.72 (2.33-3.12),235,85.14,3.73 (3.48-3.97),13.01,3.73
+oligodendrocytes 10,735.0,0.083,40.0,277,0,0.0,NA,277,100.0,3.89 (3.65-4.14),NA,8.95
+connective tissue cells 21,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+astrocytes 15,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 16,156.0,0.262,85.0,3,0,0.0,NA,3,100.0,0.40 (0.24-0.56),NA,1.61
+da neurons 6,300.0,0.11,29.0,159,0,0.0,NA,159,100.0,4.36 (4.06-4.67),NA,3.73
+astrocytes microglia 23,161.0,0.404,95.0,7,0,0.0,NA,7,100.0,1.58 (0.74-2.41),NA,2.66
+astrocytes 4,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 0,2078.0,0.113,46.0,238,14,5.88,3.39 (2.65-4.12),224,94.12,3.65 (3.42-3.89),7.53,4.87
+microglia 1,,,,0,0,0.0,NA,0,0.0,NA,NA,NA
+oligodendrocytes 3,1003.0,0.049,5.0,111,0,0.0,NA,111,100.0,3.30 (2.96-3.64),NA,4.23
+oligodendrocytes 2,1630.0,0.164,89.0,154,3,1.95,4.57 (2.77-6.38),151,98.05,3.21 (2.95-3.48),3.18,3.60
