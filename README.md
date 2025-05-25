@@ -4,13 +4,13 @@ GenCoExplorer is an API web to identify potential cell type markers and predict 
 
 ## How to use it
 
-Para poder desplegar la herramienta de este TFG, primero se debe acceder al repositorio de GitHub donde se encuentran almacenados todos los datos y el código necesarios.
+To deploy the tool developed in this Final Degree Project, you must first access the GitHub repository where all the necessary data and code are stored.
 
-Una vez en el repositorio, haz clic en el botón **Code**, lo que mostrará un desplegable con varias opciones. Puedes clonar el repositorio o bien descargar un archivo `.zip` con todo el contenido.
+Once in the repository, click on the **Code** button, which will display a dropdown menu with several options. You can either clone the repository or download a `.zip` file containing all the contents.
 
-En cualquier caso, una vez descargado el repositorio, deberás ir a la carpeta llamada `code`, en la cual se encuentra el fichero principal `QueryAPI.py`.
+In any case, once the repository has been downloaded, navigate to the folder named `code`, In any case, once the repository has been downloaded, navigate to the folder named `QueryAPI.py` is located.
 
-Debes ejecutar este fichero, el cual proporcionará una dirección y un puerto a los que podrás acceder a través de un navegador. Por ejemplo, copiando en la barra de direcciones la URL `http://127.0.0.1:5000`, aparecerá la portada principal de la herramienta, y ya podrás comenzar a trabajar con ella.
+You must run this file, which will provide an address and a port that you can access through a web browser. For example, by copying the URL `http://127.0.0.1:5000`, into the browser's address bar, the tool’s main page will appear, and you will be able to start using it.
 
 ## First look
 
