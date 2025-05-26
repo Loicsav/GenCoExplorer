@@ -1,4 +1,4 @@
-## GenCoExplorer
+## GeneCoExplorer
 
 GenCoExplorer is an API web to identify potential cell type markers and predict genes functions at cell type level in the context of Parkinson's Disease. 
 
