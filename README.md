@@ -19,6 +19,7 @@ You must run this file, which will provide an address and a port that you can ac
 ## First look
 
 ![Home page](PaginaPrincipal.png)
+
 On the home page of the API, there are three types of queries: by gene symbol, GO term, or cell type.
 All of them have a similar structure. At the top there are headers for switching between queries. Ot the left panel, there is a `Run example` button that autocompletes the filters and the search bar. Here is an example of a gene symbol query:
 
