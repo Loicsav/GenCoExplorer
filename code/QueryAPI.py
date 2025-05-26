@@ -268,7 +268,7 @@ def home():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenCoExplorer</title>
+    <title>GeneCoExplorer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -336,9 +336,10 @@ def home():
             margin-bottom: 10px;
         }
         .stats {
-            margin-top: 30px;
+
+            margin-bottom: 40px;
             color: #ffffff;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
         }
         .stats span {
             margin: 0 10px;
@@ -347,7 +348,7 @@ def home():
 </head>
 <body>
     <div class="header">
-        <h1>GenCoExplorer</h1>
+        <h1>GeneCoExplorer</h1>
     </div>
     <div class="content">
         <h2>A new resource to identify potential cell type markers and predict genes functions at cell type level in the context of Parkinson's Disease</h2>
@@ -359,14 +360,15 @@ def home():
         </div>
     </div>
     <div class="footer">
-        <p>GenCoExplorer was developed by Manuel Salas Díaz, BSc student in Computer Science</p>
-        <p>GenCoExplorer has been developed under the supervision of Professor José T. Pepe Palma and postdoctoral researcher Alicia Gómez Pascual from the University of Murcia</p>
         <div class="stats">
-            <span><strong>Nº Networks:</strong> 112</span> |
-            <span><strong>Nº Cell types:</strong> 24</span> |
-            <span><strong>Nº Annotations:</strong> 2,423</span> |
-            <span><strong>Nº Predicted functions:</strong> 601,656</span>
+            <span><strong>Networks:</strong> 112</span> |
+            <span><strong>Cell types:</strong> 24</span> |
+            <span><strong>Annotations:</strong> 2,423</span> |
+            <span><strong>Predicted functions:</strong> 601,656</span>
         </div>
+        <p>GeneCoExplorer was developed by Manuel Salas Díaz, BSc student in Computer Science</p>
+        <p>GeneCoExplorer has been developed under the supervision of Professor José T. Pepe Palma and postdoctoral researcher Alicia Gómez Pascual from the University of Murcia</p>
+        <p>We also thank the collaboration of Professor Juan A. Botía Blaya, also from the University of Murcia</p>
     </div>
 </body>
 </html>
@@ -3447,6 +3449,8 @@ def new_gene_functions():
     minimal_expr_file = "./Minimally_Expressed_Statistics.csv"
     
     results = []
+    new_annotations = []
+    show_annotations = False  # Nuevo estado para controlar la visualización
     stats = {
         "minimal_expression": "N/A",
         "minimal_percentage": "N/A",
@@ -3572,6 +3576,101 @@ def new_gene_functions():
                         except (ValueError, TypeError):
                             stats["mean_new_ic_bulk"] = "N/A"
 
+        if data_source == 'scRNA':
+            annotations_data = load_csv(annotations_file)
+            modules_data = []
+            
+            # Buscar el gen en todos los módulos
+            for file_name in os.listdir(modules_dir):
+                if file_name.endswith(".csv"):
+                    df_module = pd.read_csv(os.path.join(modules_dir, file_name))
+                    gene_data = df_module[df_module['gene'] == search_term]
+                    if not gene_data.empty:
+                        cell_type = extract_cell_type(file_name)
+                        iteration = extract_iteration(file_name)
+                        for _, row in gene_data.iterrows():
+                            modules_data.append({
+                                'cell_type': cell_type,
+                                'iteration': iteration,
+                                'cluster': row['subcluster'],
+                                'module': row['module']
+                            })
+            
+            # Buscar anotaciones correspondientes
+            if annotations_data is not None and modules_data:
+                for module_info in modules_data:
+                    mask = (
+                        (annotations_data['cell_type'] == module_info['cell_type'].replace(' ', '_')) &
+                        (annotations_data['iteration'] == module_info['iteration']) &
+                        (annotations_data['cluster'] == module_info['cluster']) &
+                        (annotations_data['module'] == module_info['module']) &
+                        (~annotations_data['intersection'].str.contains(search_term, na=False)))
+                    
+                    filtered = annotations_data[mask].copy()
+                    if not filtered.empty:
+                        # Formatear valores
+                        filtered['p_value'] = filtered['p_value'].apply(format_p_value)
+                        filtered['intersection'] = filtered['intersection'].apply(format_intersection)
+                        filtered['IC'] = filtered['IC'].apply(format_ic)
+                        filtered['cell_type'] = filtered['cell_type'].str.replace('_', ' ')
+                        
+                        # Aplicar filtro de cell type
+                        if cell_type_filter:
+                            filtered = filtered[filtered['cell_type'] == cell_type_filter]
+                        
+                        new_annotations.extend(filtered.to_dict('records'))
+
+        elif data_source == 'bulk':
+            annotations_df = pd.read_csv(bulk_annotations_file)
+            modules_df = pd.read_csv(bulk_modules_file)
+
+            annotations_df = annotations_df[annotations_df['cutoff'] == 10]
+            modules_df = modules_df[modules_df['cutoff'] == 10]
+
+            # Buscar módulos donde aparece el gen
+            gene_modules = modules_df[modules_df['gene'] == search_term]
+            new_annotations = []
+
+            if not gene_modules.empty:
+                for _, module_row in gene_modules.iterrows():
+                    module = module_row['module']
+
+                    # Filtro como en predict_got1_functions()
+                    filtered_annot = annotations_df[
+                        (annotations_df['target'] == 'APP') &
+                        (annotations_df['tissue'] == 'DLPFC') &
+                        (annotations_df['phenotype'] == 'AD') &
+                        (annotations_df['module'] == module)
+                    ]
+
+                    for _, annot_row in filtered_annot.iterrows():
+                        # Extraer genes de la intersección
+                        genes = str(annot_row['intersection']).replace('[','').replace(']','').replace("'", '').split(',')
+                        genes = [g.strip() for g in genes]
+                        
+                        # Si el gen buscado NO está en la intersección, es "new"
+                        if search_term not in genes:
+                            new_annotations.append({
+                                "Cutoff": annot_row.get("cutoff"),
+                                "Target": annot_row.get("target", "APP"),
+                                "Tissue": annot_row.get("tissue", "DLPFC"),
+                                "Phenotype": annot_row.get("phenotype", "AD"),
+                                "Module": annot_row.get("module"),
+                                "Term id": annot_row.get("term_id"),
+                                "Term name": annot_row.get("term_name"),
+                                "P-value": format_p_value(annot_row.get("p_value")),
+                                "Intersection": format_intersection(annot_row.get("intersection")),
+                                "Length of Intersection": annot_row.get("length_intersection", ""),
+                                "Source": annot_row.get("source", ""),
+                                "IC": format_ic(annot_row.get("IC", ""))
+                            })
+
+
+    
+    # Determinar si mostrar anotaciones
+    show_annotations = request.form.get('show_annotations', 'false') == 'true'
+
+    # Configurar headers según data_source
     if data_source == 'scRNA':
         headers = [
             "Cell type", "Module size", 
@@ -3580,12 +3679,51 @@ def new_gene_functions():
             f"Term that include {search_term} ", f"Term that include {search_term} (%)", f"IC of terms that include {search_term} (95% CI)", 
             f"New terms associated with {search_term} ", f"New terms associated with {search_term} (%)", f"IC of new terms associated with {search_term} (95% CI)"
         ]
+        annotation_headers = [
+            "Iteration", "Cell type", "Cluster", "Module", "Term id", "Term name", 
+            "P-value", "Intersection", "Length of Intersection", "Source", 
+            "Subgraph ID", "Subgraph size", "IC"
+        ]
+        annotation_column_descriptions = {
+            "Iteration": "Number of times the pseudo-cell algorithm has been executed (e.g., T0, T5, etc.)",
+            "Cell type": "Cell type where the gene is expressed",
+            "Cluster": "Subgroup within the cell type",
+            "Module": "Name of the module",
+            "Term id": "Identifier of an annotation in the GO database",
+            "Term name": "Full name of a GO annotation",
+            "P-value": "Significance of an annotation given a set of genes in a co-expression module (lower = more significant)",
+            "Intersection": "Name of the genes in a module that intersect with a GO database annotation",
+            "Length of Intersection": "Number of genes in a module that intersect with a GO database annotation",
+            "Source": "Database used to obtain the annotations (biological_process, cellular_component and molecular_function)",
+            "Subgraph ID": "GO annotation subgraph identifier",
+            "Subgraph size": "Number of GO annotations that make up a subgraph",
+            "IC": "Index that tells us how informative an annotation is. The higher the CI, the more specific and informative the annotation is."
+        }
+
     else:
         headers = [
             "Target", "Total annotations", 
             "Known functions", "Known functions (%)", "IC known", 
             "New functions", "New functions (%)", "IC new"
         ]
+        annotation_headers = [
+            "Cutoff", "Target", "Tissue", "Phenotype", "Module", "Term id", "Term name", 
+            "P-value", "Intersection", "Length of Intersection", "Source", "IC"
+        ]
+        annotation_column_descriptions = {
+            "Cutoff": "Module inclusion cutoff value used for TGCN.",
+            "Target": "Main variable of interest (e.g., gene or covariate).",
+            "Tissue": "Brain tissue from which the data was derived.",
+            "Phenotype": "Condition or group studied (e.g., AD, control).",
+            "Module": "Gene module associated with the annotation.",
+            "Term id": "GO term ID associated with the module.",
+            "Term name": "GO term name associated with the module.",
+            "P-value": "Statistical significance of the enrichment.",
+            "Intersection": "Genes shared between the module and the GO term.",
+            "Length of Intersection": "Number of intersecting genes.",
+            "Source": "Database source of the GO term.",
+            "IC": "Information Content of the annotation (higher means more specific)."
+        }
     
     table_rows = ""
     for result in results:
@@ -3645,6 +3783,33 @@ def new_gene_functions():
             "New functions (%)": "Percentage of new annotations from total",
             "IC new": "Information content of new annotations"
         }
+
+    annotation_rows = ""
+    if new_annotations:
+        for ann in new_annotations:
+            if data_source == 'scRNA':
+                # Columnas para scRNA-seq
+                annotation_rows += "<tr>" + "".join([
+                    f"<td class='text-center'>{ann.get(key, '')}</td>"
+                    for key in [
+                        "iteration", "cell_type", "cluster", "module", "term_id",
+                        "term_name", "p_value", "intersection", "length_intersection",
+                        "source", "subgraph_id", "subgraph_size", "IC"
+                    ]
+                ]) + "</tr>"
+            else:
+                # Columnas para bulk RNA-seq
+                annotation_rows += "<tr>" + "".join([
+                    f"<td class='text-center'>{ann.get(key, '')}</td>"
+                    for key in [
+                        "Cutoff", "Target", "Tissue", "Phenotype", "Module",
+                        "Term id", "Term name", "P-value", "Intersection",
+                        "Length of Intersection", "Source", "IC"
+                    ]
+                ]) + "</tr>"
+    else:
+        colspan = len(annotation_headers)
+        annotation_rows = f"<tr><td colspan='{colspan}' class='text-center'>No new annotations found</td></tr>"
 
     return render_template_string(f"""
 <!DOCTYPE html>
@@ -3867,6 +4032,23 @@ def new_gene_functions():
             background-color: #f9aa33;
             color: white;
         }}
+        .annotation-toggle {{
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 230px;
+        }}
+        .annotation-toggle:hover {{
+            background-color: #45a049;
+            color: white;
+        }}
+        .hidden-table {{
+            display: none;
+        }}
     </style>
 </head>
 <body>
@@ -3899,11 +4081,18 @@ def new_gene_functions():
                 <button type="submit" class="btn btn-primary">Search</button>
                 <button type="button" class="btn run-example-btn" onclick="runExample()">Run example</button>
             </div>
+            {"<input type='hidden' name='show_annotations' value='true'/>" if show_annotations else ""}
+            
         </form>
     </div>
     <div class="center-panel">
         <div class="results-header">
-            <h2>{"Predicted functions for" if data_source == "scRNA" else "Functional predictions for"} {search_term} {"based on co-expression" if data_source == "scRNA" else ""}</h2>
+            <h2>
+                {"Predicted functions for" if data_source == "scRNA" else "Functional predictions for"} {search_term} {"based on co-expression" if data_source == "scRNA" else ""}
+            </h2>
+            <button type="button" class="btn annotation-toggle" onclick="toggleTables()">
+                {"Show Main Table" if show_annotations else "Show Annotations Details"}
+            </button>
             <form method="POST" action="/download_predict">
                 <input type="hidden" name="gene_name" value="{search_term}">
                 <input type="hidden" name="cell_type_filter" value="{cell_type_filter}">
@@ -3919,7 +4108,8 @@ def new_gene_functions():
                 </div>
             </form>
         </div>
-        <div class="table-container">
+
+        <div id="main-table" class="table-container" {'style="display:none;"' if show_annotations else ''}>
             <table class="table table-bordered table-hover">
                 <thead class="table-primary">
                     <tr>
@@ -3931,6 +4121,26 @@ def new_gene_functions():
                 </thead>
                 <tbody>
                     {table_rows if search_term else f"<tr><td colspan='{len(headers)}' class='text-center'>Enter a gene symbol to search</td></tr>"}
+                </tbody>
+            </table>
+        </div>
+        <div id="annotation-table" class="table-container" {'style="display:none;"' if not show_annotations else ''}>
+            <table class="table table-bordered table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        {''.join([
+                            f'<th class="text-center">{header} <div class="tooltip-icon">?</div><div class="tooltip-text">{annotation_column_descriptions.get(header, "")}</div></th>'
+                            for header in annotation_headers
+                        ])}
+                    </tr>
+                </thead>
+                <tbody>
+                    {annotation_rows if new_annotations else f'''
+                    <tr>
+                        <td colspan="{len(annotation_headers)}" class="text-center">
+                            No new annotations found
+                        </td>
+                    </tr>'''}
                 </tbody>
             </table>
         </div>
@@ -3989,9 +4199,39 @@ def new_gene_functions():
         form.submit();
     }}
     </script>
+    <script>
+    function toggleTables() {{
+        const mainTable = document.getElementById('main-table');
+        const annotationTable = document.getElementById('annotation-table');
+        const toggleButton = document.querySelector('.annotation-toggle');
+
+        // Alternar visibilidad
+        const showAnnotations = mainTable.style.display !== 'none';
+
+        if (showAnnotations) {{
+            mainTable.style.display = 'none';
+            annotationTable.style.display = 'block';
+            toggleButton.innerText = 'Show Main Table';
+        }} else {{
+            mainTable.style.display = 'block';
+            annotationTable.style.display = 'none';
+            toggleButton.innerText = 'Show Annotations Details';
+        }}
+    }}
+    </script>
+
 </body>
 </html>
-""")
+""", 
+    search_term=search_term,
+    data_source=data_source,
+    results=results,
+    new_annotations=new_annotations,
+    stats=stats,
+    headers=headers,
+    annotation_headers=annotation_headers,
+    annotation_rows=annotation_rows,
+    show_annotations=show_annotations)
 
 
 # Distintas funciones de download para los diferentes apartados
