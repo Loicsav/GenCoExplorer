@@ -8,15 +8,15 @@ from io import BytesIO
 app = Flask(__name__)
 
 # Distintos ficheros
-annotations_file = "./final_subgraphs_preprocessed_IC.csv" 
+annotations_file = "./data/final_subgraphs_preprocessed_IC.csv"
 modules_dir = "./scCoExpNets-master/inst/data/networks/"
 
-bulk_annotations_file = "./APP_ROSMAP_TGCNs_annotations.csv"
-bulk_modules_file = "./APP_ROSMAP_TGCNs_modules.csv"
+bulk_annotations_file = "./data/APP_ROSMAP_TGCNs_annotations.csv"
+bulk_modules_file = "./data/APP_ROSMAP_TGCNs_modules.csv"
 
-minimally_expressed_df = pd.read_csv("./Minimally_Expressed_Statistics.csv")
-relevant_at_t0_df = pd.read_csv("./Relevant_At_T0_Statistics.csv")
-relevant_in_all_iterations_df = pd.read_csv("./Relevant_In_All_Iterations_Statistics.csv")
+minimally_expressed_df = pd.read_csv("./data/Minimally_Expressed_Statistics.csv")
+relevant_at_t0_df = pd.read_csv("./data/Relevant_At_T0_Statistics.csv")
+relevant_in_all_iterations_df = pd.read_csv("./data/Relevant_In_All_Iterations_Statistics.csv")
 
 def load_csv(file_path):
     # Cargar un archivo CSV desde la ruta especificada.
@@ -1332,11 +1332,11 @@ def gene_functions():
     search_term = request.form.get('gene_name', '').strip().upper()
     
     if data_source == 'scRNA':
-        annotations_file_path = "./final_subgraphs_preprocessed_IC.csv"
+        annotations_file_path = "./data/final_subgraphs_preprocessed_IC.csv"
         modules_dir_path = "./scCoExpNets-master/inst/data/networks/"
-        minimally_expressed_file = "./Minimally_Expressed_Statistics.csv"
+        minimally_expressed_file = "./data/Minimally_Expressed_Statistics.csv"
     else:
-        annotations_file_path = "./APP_ROSMAP_TGCNs_annotations.csv"
+        annotations_file_path = "./data/APP_ROSMAP_TGCNs_annotations.csv"
         modules_dir_path = None  
     
     stats = {
@@ -3446,7 +3446,7 @@ def new_gene_functions():
     data_source = request.form.get('data_source', 'scRNA').strip()
     
     predicts_dir = "./DistintosPredicts/Predicts/" if data_source == 'scRNA' else "./DistintosPredicts/PredictsBulk/"
-    minimal_expr_file = "./Minimally_Expressed_Statistics.csv"
+    minimal_expr_file = "./data/Minimally_Expressed_Statistics.csv"
     
     results = []
     new_annotations = []
@@ -4091,7 +4091,7 @@ def new_gene_functions():
                 {"Predicted functions for" if data_source == "scRNA" else "Functional predictions for"} {search_term} {"based on co-expression" if data_source == "scRNA" else ""}
             </h2>
             <button type="button" class="btn annotation-toggle" onclick="toggleTables()">
-                {"Show Main Table" if show_annotations else "Show Annotations Details"}
+                {"Statistics table" if show_annotations else "New functions table"}
             </button>
             <form method="POST" action="/download_predict">
                 <input type="hidden" name="gene_name" value="{search_term}">
@@ -4211,11 +4211,11 @@ def new_gene_functions():
         if (showAnnotations) {{
             mainTable.style.display = 'none';
             annotationTable.style.display = 'block';
-            toggleButton.innerText = 'Show Main Table';
+            toggleButton.innerText = 'Statistics table';
         }} else {{
             mainTable.style.display = 'block';
             annotationTable.style.display = 'none';
-            toggleButton.innerText = 'Show Annotations Details';
+            toggleButton.innerText = 'New functions table';
         }}
     }}
     </script>
@@ -4471,9 +4471,9 @@ def download_exclusive_genes():
         return "Please select a cell type first", 400
     
     try:
-        df_min = pd.read_csv("./Minimally_Expressed_Statistics.csv")
-        df_t0 = pd.read_csv("./Relevant_At_T0_Statistics.csv")
-        df_all = pd.read_csv("./Relevant_In_All_Iterations_Statistics.csv")
+        df_min = pd.read_csv("./data/Minimally_Expressed_Statistics.csv")
+        df_t0 = pd.read_csv("./data/Relevant_At_T0_Statistics.csv")
+        df_all = pd.read_csv("./data/Relevant_In_All_Iterations_Statistics.csv")
         
         normalized_filter = cell_type_filter.replace("_", " ")
         
